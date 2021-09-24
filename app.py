@@ -41,4 +41,4 @@ def spotify_post():
         return render_template('index.html', attention='※アーティスト名と表示件数の入力してください。', name=search, num=nums)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
