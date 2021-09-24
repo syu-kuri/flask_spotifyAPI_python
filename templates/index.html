@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify API</title>
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+<body>
+  <header>
+    <h1 style="border-bottom: 2px solid #ccc;">Spotify曲検索</h1>
+    <p>検索したいアーティスト名と表示させる曲の数を入力してください。</p>
+  </header>
+  <div class="container" style="background: #F4E7D3;">
+    <form action="/" method="post" enctype="multipart/form-data">
+      <!-- <div>
+        <label for="name">検索種類：</label>
+        <input type="radio" id="type" name="name" value="artist" checked>アーティスト
+        <input type="radio" id="type" name="name" value="album">アルバム
+        <input type="radio" id="type" name="name" value="playlist">プレイリスト
+      </div> -->
+      <div>
+        <label for="name">アーティスト名：</label>
+        <input type="text" id="name" name="name" placeholder="アーティスト名" value="{{ name }}">
+      </div>
+      <div>
+        <label for="name">表示個数：</label>
+        <input type="number" id="number" name="number" placeholder="表示個数" value="{{ num }}">
+      </div>
+      <div>
+        <input type="submit" value="送信">
+      </div>
+      <p class="attention" style="color: red;">{{ attention }}</p>
+    </form>
+    <div>
+      <h2>{{ result }}</h2>
+      <ul>
+        {% for music in musics %}
+        <li>{{ music }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

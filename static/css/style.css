@@ -1,0 +1,45 @@
+body {
+  background: #F4E7D3;
+  margin: 10px;
+  text-align: center;
+}
+
+header {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.container {
+  /* background: skyblue; */
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container div {
+  width: 100%;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.attention {
+  color: red;
+}
+
+.container form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container input[type=submit] {
+  width: 40%;
+  background: aqua
+}
+
+.container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container li {
+  margin: 8px auto;
+}
